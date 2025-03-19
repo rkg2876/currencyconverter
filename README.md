@@ -1,4 +1,6 @@
 Currency Converter
+
+
 This is a Currency Converter web application that allows users to convert currencies in real-time using live exchange rates. The application is built with HTML, CSS, and JavaScript and fetches data from a reliable exchange rate API. It also includes a live currency rates table with pagination and a search feature for easy navigation.
 
 Features
