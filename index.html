@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time currency converter with live exchange rates. Convert currencies instantly and accurately.">
+    <meta name="keywords" content="currency converter, exchange rates, real-time currency conversion, forex">
+    <meta name="author" content="Your Name">
+    <title>Real-Time Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-coins" aria-label="Currency Icon"></i>
+            <span>CurrencyPro</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-to-use">How to Use</a></li>
+                <li><a href="#rates">Live Rates</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="#converter" class="btn">Convert Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Real-Time Currency Converter</h1>
+        <p>Convert currencies instantly with live exchange rates.</p>
+
+        <!-- Currency Converter -->
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Enter amount" value="1">
+            <select id="fromCurrency">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <span>to</span>
+            <select id="toCurrency">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <button id="convertBtn">Convert</button>
+        </div>
+        <div class="result">
+            <h2 id="resultText">Result will appear here</h2>
+        </div>
+
+        <!-- How to Use Section -->
+        <section id="how-to-use">
+            <h2>How to Use This Website</h2>
+            <ol>
+                <li>Enter the amount you want to convert in the input field.</li>
+                <li>Select the currency you want to convert from in the "From" dropdown.</li>
+                <li>Select the currency you want to convert to in the "To" dropdown.</li>
+                <li>Click the "Convert" button to see the result.</li>
+                <li>Check the live currency rates table below for real-time exchange rates.</li>
+            </ol>
+        </section>
+
+        <!-- Live Currency Rates Table -->
+        <section id="rates">
+            <h2>Live Currency Exchange Rates</h2>
+            <p>Compare 100+ currencies in real-time and find the right moment to transfer funds.</p>
+            <table id="currencyTable">
+                <thead>
+                    <tr>
+                        <th>Currency Code</th>
+                        <th>Currency Name</th>
+                        <th>Exchange Rate (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <section id="faq">
+                <h3>FAQ</h3>
+                <ul>
+                    <li><strong>Q: How accurate are the exchange rates?</strong><br>A: The exchange rates are updated in real-time using a reliable API.</li>
+                    <li><strong>Q: Can I use this website for free?</strong><br>A: Yes, this website is completely free to use.</li>
+                    <li><strong>Q: Which currencies are supported?</strong><br>A: We support 100+ currencies, including USD, EUR, GBP, JPY, and more.</li>
+                    <li><strong>Q: How often are the rates updated?</strong><br>A: The rates are updated every 60 seconds.</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or feedback, feel free to reach out:</p>
+                <p>Email: support@currencypro.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CurrencyPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
